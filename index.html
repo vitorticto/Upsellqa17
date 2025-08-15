@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QA CENTER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Inicio do Caminho do Ambiente -->     
+    <script src="https://midas.ticto.app/oneclickbuy.js" async></script>
+    <!-- Fim do Caminho do Ambiente -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #f4f7fa;
+        font-family: "Roboto", Arial, Helvetica, sans-serif;
+        color: #222;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box {
+        background: #ffffff;
+        border-radius: 0.5rem;
+        padding: 4rem 2.5rem;
+        max-width: 600px;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+      }
+
+      .logo img {
+        width: 140px;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+        color: #222;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        color: #666;
+      }
+
+      .ticto-upsell-button,
+      .ticto-refuse-button {
+        padding: 14px 24px;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        width: 100%;
+        max-width: 280px;
+        transition: all 0.3s ease;
+      }
+
+      .ticto-upsell-button {
+        background-color: #246b24;
+        color: white;
+        border: 2px solid #419e2a;
+        font-weight: bold;
+      }
+
+      .ticto-upsell-button:hover {
+        background-color: #249e2a;
+      }
+
+      .ticto-refuse-button {
+        background-color: #ffffff;
+        color: #666;
+        border: 2px solid #ccc;
+      }
+
+      .ticto-refuse-button:hover {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div class="logo">
+          <img
+            src="https://d2ucq9llvgnbyn.cloudfront.net/Ticto+Logo.svg"
+            alt="Ticto Logo"
+          />
+        </div>
+        <h1>Upsell</h1>
+        <h2>Oferta exclusiva por tempo limitado</h2>
+        <!-- Código da Oferta -->
+        <!--Inicio do Botão Comprar Agora-->
+        <button type="button" class="ticto-upsell-button" data-offer-code="">COMPRAR AGORA</button>
+        <!--Fim do Botão Comprar Agora-->
+        <button type="button" class="ticto-refuse-button" onclick="window.location.href='https://ticto.com.br/'">
+          NÃO QUERO, OBRIGADO
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
